@@ -6,7 +6,7 @@
 /*   By: mgagne <mgagne@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 11:42:41 by mgagne            #+#    #+#             */
-/*   Updated: 2022/11/23 11:43:47 by mgagne           ###   ########.fr       */
+/*   Updated: 2022/11/23 14:43:17 by mgagne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 ssize_t	ft_print_str(char *s)
 {
-
+	if (s)
+		return (write(1, s, ft_strlen(s)));
+	return (write(1, "(null)", 6));
 }
