@@ -6,7 +6,7 @@
 /*   By: mgagne <mgagne@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 11:11:54 by mgagne            #+#    #+#             */
-/*   Updated: 2022/11/23 14:52:26 by mgagne           ###   ########.fr       */
+/*   Updated: 2022/11/23 21:55:42 by mgagne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ int		ft_printf(const char *format, ...);
 
 ssize_t	ft_print_char(int c);
 ssize_t	ft_print_str(char *s);
-ssize_t	ft_print_int(int i);
-ssize_t	ft_print_uint(int ui);
-ssize_t	ft_print_hexa(int a, char *base);
+ssize_t	ft_print_int(int n);
+ssize_t	ft_print_uint(unsigned int nb);
+ssize_t	ft_print_hexa(int n, char *base);
 ssize_t	ft_print_hexa_pointer(void *p);
 
 char	*ft_itoa(int n);
