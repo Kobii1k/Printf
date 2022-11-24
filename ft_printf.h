@@ -6,7 +6,7 @@
 /*   By: mgagne <mgagne@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 11:11:54 by mgagne            #+#    #+#             */
-/*   Updated: 2022/11/23 21:55:42 by mgagne           ###   ########.fr       */
+/*   Updated: 2022/11/24 09:45:05 by mgagne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdarg.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdint.h>
 
 int		ft_printf(const char *format, ...);
 
