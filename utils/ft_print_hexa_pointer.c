@@ -6,7 +6,7 @@
 /*   By: mgagne <mgagne@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 11:42:36 by mgagne            #+#    #+#             */
-/*   Updated: 2022/11/24 10:29:12 by mgagne           ###   ########.fr       */
+/*   Updated: 2022/11/24 13:04:15 by mgagne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,6 @@ ssize_t	ft_print_hexa_pointer(void *p)
 {
 	ssize_t		len;
 
-	if (!p)
-		return (ft_print_str("(nil)"));
 	len = write(1, "0x", 2);
 	len += ft_loop_hexa(p);
 	return (len);
